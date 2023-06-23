@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    margin: 50px;
+    transition: 3000ms;
+}
+
+.personaje, .personaje_dos, .personaje_tres {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #091f29;
+    transition: 300ms;
+    position: absolute;
+} 
+
+.imagen{
+    height: 350px;
+    width: 250px;
+    background-image: url(/img/uno.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_dos{
+    height: 350px;
+    width: 350px;
+    background-image: url(/img/tres.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.imagen_tres{
+    height: 400px;
+    width: 250px;
+    background-image: url(/img/cinco.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+.info, .info_dos, .info_tres{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+.card:hover .imagen {
+    transform: translateY(-40);
+    transition: 300ms;
+    filter: none;
+    background-image: url(/img/dos.png);
+    background-position: center;
+    height: 230px;
+}
+
+.card:hover .imagen_dos {
+    transform: translateY(-40);
+    transition: 300ms;
+    filter: none;
+    background-image: url(/img/cuatro.png);
+    background-position: center;
+}
+
+.card:hover .imagen_tres {
+    transform: translateY(-40);
+    transition: 300ms;
+    filter: none;
+    background-image: url(/img/seis.png);
+    background-position: center;
+}
+
+.card:hover .personaje {
+    background-image: url(/img/spider.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:hover .personaje_dos {
+    background-image: url(/img/miles.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card:hover .personaje_tres {
+    background-image: url(/img/Gwen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personaje h2 {
+    color: red;
+}
+
+.personaje_dos h2 {
+    color: rgb(0, 0, 83);
+}
+
+.personaje_tres h2 {
+    color: rgb(246, 127, 240);
+}
+
+p {
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button {
+    width: 130px;
+    margin: auto;
+    padding: 10px;
+    background-color: #091f29;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
